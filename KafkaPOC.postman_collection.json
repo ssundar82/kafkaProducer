@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "65e2ae4d-3496-4270-9428-40df5566e5e9",
+		"name": "KafkaPOC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3080/order/publish/Helloworld",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3080/order/publish/Helloworld",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3080",
+					"path": [
+						"order",
+						"publish",
+						"Helloworld"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3080/order/publish",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderID\": \"A12347876\",\r\n  \"customerName\": \"Sundar Srinivasan\",\r\n  \"orderDesc\": \"TFInally got it working\",\r\n  \"orderDate\": \"2022-05-05\",\r\n  \"orderLocation\": \"USA\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3080/order/publish",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3080",
+					"path": [
+						"order",
+						"publish"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
