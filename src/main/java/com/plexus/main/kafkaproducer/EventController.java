@@ -12,8 +12,8 @@ public class EventController {
     @Autowired
     ServiceProducer serviceProducer;
 
-    @PostMapping("/publish/{message}")
-    public String send(@PathVariable String message) {
+    @PostMapping("/push")
+    public String send(@RequestBody String message) {
         serviceProducer.sendMessage(message);
         return ("Message Published Successfully to topic");
     }
