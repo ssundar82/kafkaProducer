@@ -1,4 +1,4 @@
-package com.plexus.main.kafkahttpdemo;
+package com.plexus.main.kafkaproducer;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
