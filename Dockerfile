@@ -1,4 +1,4 @@
-FROM socdoc42569/openjdk11:1
+FROM sundarplexus/openjdk11:1
 ARG JAR_FILE=target/*.jar
 COPY ${JAR_FILE} app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]
